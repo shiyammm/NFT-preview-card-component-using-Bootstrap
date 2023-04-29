@@ -28,6 +28,7 @@ body {
 }
 .card-title {
   font-weight: bold;
+  font-size: 1.4rem;
   color: var(--White);
 }
 .card-title:hover {
