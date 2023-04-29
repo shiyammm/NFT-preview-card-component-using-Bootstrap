@@ -1,0 +1,65 @@
+:root {
+  /* ### Primary */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Cyan-Hover: hsla(178, 100%, 50%, 0.5);
+
+  /* ### Neutral */
+
+  --Very-dark-blue-main: hsl(217, 54%, 11%);
+  --Very-dark-blue-layer: hsl(213, 95%, 7%);
+  --Very-dark-blue-card: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--Very-dark-blue-main);
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  background-color: var(--Very-dark-blue-card);
+  color: var(--Soft-blue);
+}
+.ethereum-text {
+  color: var(--Cyan);
+  font-weight: bold;
+}
+.card-title {
+  font-weight: bold;
+  color: var(--White);
+}
+.card-title:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+hr {
+  background-color: var(--Very-dark-blue-main);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5 ease;
+  background-color: var(--Cyan-Hover);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.img-container {
+  position: relative;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.author-name {
+  color: var(--White);
+}
+.author-name:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
